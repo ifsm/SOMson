@@ -1,0 +1,108 @@
+:root {
+    --r-background-color: rgb(33, 33, 33);
+    color: #fff;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: rgb(33, 33, 33);
+    letter-spacing: 0.07em;
+    padding-top: 40px;
+    font-family: Arial, sans-serif;
+}
+
+/*************** General *******************/
+h1 {
+    position: absolute;
+    font-size: 30pt;
+    color: white;
+}
+
+h2 {
+    /* position: absolute; */
+    font-size: 24pt;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-top: -20px
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(630px, 1fr));
+    grid-gap: 5px;
+}
+
+#MapBox {
+    min-width: 650px;
+    column-span: all;
+}
+
+#TextBox {
+    min-width: 650px;
+    min-height: 795px;
+    column-span: all;
+}
+
+#SliderBox {
+    max-width: 750px;
+}
+
+/*************** SOM *******************/
+
+#SelectButtons {
+    margin-top: -10px;
+}
+
+circle.Punkt {
+    position: absolute;
+    z-index: -1;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 2px;
+}
+
+.mapPlot {
+    position: absolute;
+    border: 2px solid white;
+    left: 50px;
+    top: 200px;
+    overflow: visible;
+    z-index: 1;
+}
+
+.invis {
+    display: none;
+}
+
+/*************** Buttons *******************/
+
+.SelBtn {
+    margin: 6px;
+    height: 40px;
+
+    font-size: 10.5pt;
+
+    background-color: transparent;
+    color: #999;
+    border-radius: 7px;
+    border: 2px solid #999;
+
+    cursor: pointer;
+}
+
+.SelBtn.selected,
+.SelBtn.active {
+
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 5px;
+}
+
+.sliderFrame {
+    width: 95%;
+    /* margin: 20px; */
+    padding: 15px 0px;
+}
