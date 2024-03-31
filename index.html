@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Sonifiy Kohonen Map</title>
+
+	<meta name="author" content="Simon Linke">
+
+	<!-- Bibliotheken -->
+	<script src="../scripts/js/librarys/p5.min.js"></script>
+	<script src="../scripts/js/librarys/p5.sound.js"></script>
+	<!-- colormaps zum PLotten ohne PLotly -->
+	<script src="../scripts/js/librarys/js-colormaps.js"></script>
+
+	<!-- funktionen zum plotten der Som, für Wörter, Farben und Allgemein -->
+	<script src="../scripts/js/PlotFkt.js"></script>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="../scripts/css/SomGeneral.css">
+	<link rel="stylesheet" type="text/css" href="../scripts/css/SomSimple.css">
+</head>
+
+<body>
+	<div id="menuBox">
+		<div id="title">SOMson</div>
+		<div id="Menu">
+			<div id="menLinks">
+				<a href="../">about</a>
+				<a href="./" class="activePage">SOMson</a>
+				<a href="../extended">extended Version</a>
+			</div>
+			<div id="gitLinks"><a href="../disclaimer.html"><img src="../Data/github-mark-white.svg" height="25px"
+						alt="GitHub Logo" /><img src="../Data/GitHub_Logo_White.png" height="25px"
+						alt="GitHub Logo" /></a>
+			</div>
+			<!-- <div id="gitLinks"><a href="https://github.com/Simon-Linke/SOMson"><img src="../Data/github-mark-white.svg"
+		height="25px" alt="GitHub Logo" /><img src="../Data/GitHub_Logo_White.png" height="25px"
+		alt="GitHub Logo" /></a></div> -->
+		</div>
+	</div>
+
+	<div id="grid">
+		<div id="MapBox">
+			<h2>SOM</h2>
+			<div id="SelectButtons"></div>
+			<div id="maps">
+				<canvas id="UM_Bg" class="mapPlot" width="600" height="600"></canvas>
+				<svg id="UM_Plot" class="mapPlot" width="600" height="600"></svg>
+				<svg id="UM_Klick" class="mapPlot" width="600" height="600"></svg>
+			</div>
+		</div>
+
+		<div id="SliderBox">
+			<h2>Sonification</h2>
+
+			<button class="SelBtn control" name="1dButton" data-action="1d">
+				<span class="switchText">1D</span>
+			</button>
+
+			<div id="SliderKlick">
+				<div class="sliderFrame control">
+					<input type="range" min="0" max="1000" value="450" orient="horizontal" class="slid"
+						data-action="detune">
+					<div class="detuneText"><span>Chroma</span> </div>
+				</div>
+
+				<div class="sliderFrame control">
+					<input type="range" min="0" max="1000" value="0" orient="horizontal" class="slid"
+						data-action="rough">
+					<div class="detuneText"><span>Roughness</span> </div>
+				</div>
+
+				<div class="sliderFrame control">
+					<input type="range" min="0" max="1000" value="0" orient="horizontal" class="slid"
+						data-action="bright">
+					<div class="detuneText"><span>Sharpness</span> </div>
+				</div>
+
+				<div class="sliderFrame control">
+					<input type="range" min="0" max="1000" value="0" orient="horizontal" class="slid"
+						data-action="beat">
+					<div class="detuneText"><span>Loudness Fluctuation</span> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/loadAndPlot.js"></script>
+	<script src="js/audioScript.js"></script>
+
+</body>
