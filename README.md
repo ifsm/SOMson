@@ -12,4 +12,4 @@ Linke, S. & Ziemer, T.: SOMson -- Sonification of Multidimensional Data in Kohon
 
 
 ## Dependencies
-This project uses p5.sound (https://github.com/processing/p5.js-sound) for sound synthesis. Further, for proper display js-colormaps (https://github.com/timothygebhard/js-colormaps) and jQuerry (https://github.com/jquery/jquery) are used.
+This project uses p5.sound (https://github.com/processing/p5.js-sound) for sound synthesis. Further, for proper display js-colormaps (https://github.com/timothygebhard/js-colormaps) and jQuery (https://github.com/jquery/jquery) are used.
