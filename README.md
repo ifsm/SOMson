@@ -7,6 +7,7 @@ Explore the sonification at https://simon-linke.github.io/SOMson/
 
 
 The associated publication is currently under review and available as a preprint.
+
 Linke, S. & Ziemer, T.: SOMson -- Sonification of Multidimensional Data in Kohonen Maps. [arXiv:2404.00016](https://arxiv.org/abs/2404.00016), 2024 
 
 
