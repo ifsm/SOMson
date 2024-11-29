@@ -6,10 +6,10 @@ Kohonen Maps, aka. self-organizing maps (SOMs) are neural networks that visualiz
 Explore the sonification at https://simon-linke.github.io/SOMson/
 
 
-The associated publication is currently under review and available as a preprint.
+An in-depth explanation can be found in the associated publication:
 
-Linke, S. & Ziemer, T.: SOMson -- Sonification of Multidimensional Data in Kohonen Maps. [arXiv:2404.00016](https://arxiv.org/abs/2404.00016), 2024 
+Linke, S. & Ziemer, T. (2024). SOMson - Sonification of Multidimensional Data in Kohonen Maps. In Proceedings of the 29th International Conference on Auditory Display (ICAD2024) (pp. 50–57). ICAD 2024: The 29th International Conference on Auditory Display. International Community for Auditory Display. https://doi.org/10.21785/icad2024.008
 
 
 ## Dependencies
-This project uses p5.sound (https://github.com/processing/p5.js-sound) for sound synthesis. Further, for proper display js-colormaps (https://github.com/timothygebhard/js-colormaps) and jQuery (https://github.com/jquery/jquery) are used.
+This project uses p5.sound (https://github.com/processing/p5.js-sound) for sound synthesis. Further, for proper display, js-colormaps (https://github.com/timothygebhard/js-colormaps) and jQuery (https://github.com/jquery/jquery) are used.
